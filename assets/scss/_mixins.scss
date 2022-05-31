@@ -1,0 +1,15 @@
+/*Flexbox*/
+
+@mixin flexbox ($justify, $align, $direction) {
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+}
+
+@mixin boxmodel ($padding , $margen, $border , $b-radius) {
+    padding:$padding ;
+    margin:$margen ;
+    border:$border ;
+    border-radius:$b-radius ;
+}
+
