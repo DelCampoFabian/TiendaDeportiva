@@ -1,0 +1,49 @@
+.inicio-titulo,.inicio-subtitulo  {
+    text-align: center;
+    font-size: $titulos-mobile;
+    font-weight: 600;
+    color: $color-gris;
+    margin-top: 30px
+}
+ 
+.productos {
+    @include boxmodel (15px, 10px auto, 2px solid $color-celeste, 0px);
+    background-color: $color-gris;
+    .productos-text {
+        padding: 10px;
+        color: $color-blanco;
+        h4 {
+            text-align: center;
+            font-size: 22px;
+            font-weight: 600;
+        }
+        span {
+            font-size: $parrafos-mobile;
+        }
+        p {
+            font-size: $parrafos-mobile;
+            margin-top: 5px ;
+            span {
+                color: $color-celeste;
+                font-weight: 600;
+            }
+        }
+        .productos-btn {
+            @include boxmodel (6px 20px, auto,0, 2px);
+            display: block;
+            background-color: $color-celeste;
+            color: $color-blanco;
+            font-size: 18px;
+            outline: none;
+            transition-duration: .3s;
+            &:hover {
+                background-color: $color-blanco;
+                color: $color-celeste;
+                
+            }
+        }
+        
+    }
+
+
+}

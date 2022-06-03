@@ -16,20 +16,166 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    <header>
+    <header class="row justify-content-center">
         <nav class="navegacion">
-            <div class="nav-logo">
+            <div class="nav__logo">
                 <img class="img-fluid" src="./assets/img/logonav.jpg" alt="">
             </div>
-            <ul class="nav-enlaces">
+            <ul class="nav__enlaces p-0">
                 <li><a href="#">Inicio</a></li>
-                <li><a href="#">Sobre Nosotros</a></li>
-                <li><a href="#">Preguntas Frecuentes</a></li>
+                <li><a href="#">Accesorios</a></li>
+                <li><a href="#">Indumentaria</a></li>
+                <li><a href="#">Suplementos</a></li>
+                <li><a href="#">Snacks y Barritas</a></li>
                 <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
                 <li><a href="#">Iniciar Sesión</a></li>
             </ul>
         </nav>
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <img src="./assets/img/slider.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="./assets/img/slider2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/img/slider3.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/img/slider4.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        
     </header>
+
+    <!--main-->
+
+    <main>
+      <h1 class="inicio-titulo">Zaurkent</h1>
+      <h2 class="inicio-subtitulo">Lo mas Vendido</h2>
+      <section class="row justify-content-center">
+        <div class="col-11 col-md-5 col-lg-3 productos">
+          <div class="productos-img">
+            <img class="img-fluid" src="./assets/img/slider.png" alt="">
+          </div>
+          <div class="productos-text">
+            <h4>Producto</h4>
+            <span>Lorem ipsum dolor sit Lorem, ipsum dolor.</span>
+            <p>Precio: <span>$4000</span></p>
+            <button class="productos-btn">Añadir al Carrito <i class="fa-solid fa-cart-shopping"></i></button>
+          </div>
+        </div>
+        <div class="col-11 col-md-5 col-lg-3 productos">
+          <div class="productos-img">
+            <img class="img-fluid" src="./assets/img/slider.png" alt="">
+          </div>
+          <div class="productos-text">
+            <h4>Producto</h4>
+            <span>Lorem ipsum dolor sit Lorem, ipsum dolor.</span>
+            <p>Precio: <span>$4000</span></p>
+            <button class="productos-btn">Añadir al Carrito <i class="fa-solid fa-cart-shopping"></i></button>
+          </div>
+        </div>
+        <div class="col-11 col-md-5 col-lg-3 productos">
+          <div class="productos-img">
+            <img class="img-fluid" src="./assets/img/slider.png" alt="">
+          </div>
+          <div class="productos-text">
+            <h4>Producto</h4>
+            <span>Lorem ipsum dolor sit Lorem, ipsum dolor.</span>
+            <p>Precio: <span>$4000</span></p>
+            <button class="productos-btn">Añadir al Carrito <i class="fa-solid fa-cart-shopping"></i></button>
+          </div>
+        </div>
+        <div class="col-11 col-md-5 col-lg-3 productos">
+          <div class="productos-img">
+            <img class="img-fluid" src="./assets/img/slider.png" alt="">
+          </div>
+          <div class="productos-text">
+            <h4>Producto</h4>
+            <span>Lorem ipsum dolor sit Lorem, ipsum dolor.</span>
+            <p>Precio: <span>$4000</span></p>
+            <button class="productos-btn">Añadir al Carrito <i class="fa-solid fa-cart-shopping"></i></button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--ASIDE-->
+
+    <aside class="row justify-content-center align-items-center aside">
+      <div class="col-12 col-lg-4 row justify-content-center align-items-center">
+        <div class="col-4 col-md-4 aside-icon text-center">
+          <i class="fa-solid fa-truck"></i>
+        </div>
+        <div class="col-8 col-md-9 aside-text">
+          <h3>Envios a todo el pais</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt expedita officia ipsam sapiente tempora. Ut?</p>
+        </div>
+      </div>
+      <div class="col-12 col-lg-4 row justify-content-center align-items-center">
+        <div class="col-4 col-md-4 aside-icon text-center">
+          <i class="fa-brands fa-telegram"></i>
+        </div>
+        <div class="col-8 col-md-9 aside-text">
+          <h3>Unite a nuestro Telegram</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt expedita officia ipsam sapiente tempora. Ut?</p>
+        </div>
+      </div>
+      <div class="col-12 col-lg-4 row justify-content-center align-items-center">
+        <div class="col-4 col-md-4 aside-icon text-center">
+          <i class="fa-solid fa-address-card"></i>
+        </div>
+        <div class="col-8 col-md-9 aside-text">
+          <h3>Registrate</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt expedita officia ipsam sapiente tempora. Ut?</p>
+        </div>
+      </div>
+    </aside>
+
+    <!--PIE DE PAGINA-->
+
+    <footer class="pie row justify-content-center">
+      <div class="col-md-6 col-lg-4 pie-contacto">
+        <h5>Contacto</h5>
+        <ul>
+          <li>Whatsapp: +5455554444</li>
+          <li>Tel: +5455879241</li>
+          <li>Ubicacion: Orkeke y Chacabuco 505</li>
+          <li>Correo: Zaurkent578@gmail.com</li>
+        </ul>
+      </div>
+      <div class="col-md-6 col-lg-4 pie-pago">
+        <h5>Metodos de pago</h5>
+        <ul>
+          <li>Tarjeta de credito o debito</li>
+          <li>Efectivo</li>
+          <li>Mercado Pago</li>
+          <li>Transferencia</li>
+        </ul>
+      </div>
+      <div class="col-md-6 col-lg-4 pie-redes">
+        <h5>Seguinos en nuestras Redes</h5>
+        <a href="#"><i class="fa-brands fa-instagram"></i> </a>
+        <a href="#"><i class="fa-brands fa-facebook-f"></i> </a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-telegram"></i> </a>
+      </div>
+        <p class="pie-copy">Copyright© Todos los derechos reservados</p>
+      
+    </footer>
+        
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>

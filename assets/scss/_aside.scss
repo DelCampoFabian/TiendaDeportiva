@@ -1,0 +1,22 @@
+.aside {
+    background-color: $color-gris;
+    margin-top: 50px;
+    .aside-icon {
+        font-size: 70px;
+        color: $color-celeste;
+    }
+    .aside-text {
+        padding: 10px 20px;
+        h3 {
+            font-size: 22px;
+            text-align: center;
+            font-weight: 600;
+            color: $color-celeste;
+        }
+        p {
+            font-size: 16px;
+            text-align: center;
+            color: $color-blanco;
+        }
+    }
+}

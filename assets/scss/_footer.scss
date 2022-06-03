@@ -1,0 +1,26 @@
+.pie {
+    margin-top: 100px;
+    background-color: $color-grisClaro;
+    .pie-contacto,.pie-pago, .pie-redes {
+        padding: 10px 25px;
+        h5 {
+            color: $color-celeste;
+            font-size: $subtitulos-mobile;
+        }
+        li {
+            color: $color-blanco;
+        }
+        a {
+            text-decoration: none;
+            color: $color-blanco;
+            font-size: 28px;
+            padding: 5px 15px;
+        }
+    }
+    .pie-copy {
+        width: 100%;
+        text-align: center;
+        background-color: #aaa;
+        padding: 10px 0;
+    }
+}

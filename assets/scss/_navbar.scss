@@ -1,47 +1,59 @@
-
 .navegacion {
-    width: 100%;
-    margin: 0 auto;
-    padding: 5px 15px;
     display: flex;
-    @include flexbox (space-between, center, row);
-    border-bottom: 3px solid $color-blanco;
+    @include flexbox (center, center, column);
     background-color: $color-grisClaro;
-    .nav-logo {
-        width: 150px;
+    .nav__logo {
+        width: 200px;
         img {
             height: 100%;
             object-fit: cover;
         }
     }
-    .nav-enlaces {
+    .nav__enlaces {
         list-style: none;
-        display: flex;
-        font-size: $parrafos-desktop;
-        margin-top: 10px;
+        text-align: center;
+        font-size: $parrafos-mobile;
         li {
-            padding: 5px 20px;
-            margin: 0px 15px;
-            
-            &:hover a {            
-                color: $color-gris;
-                background: rgb(0,149,255);
-                background: linear-gradient(0deg, rgba(0,149,255,1) 0%, rgba(0,119,204,0.8070400035014006) 74%);
-                box-shadow: 1px 1px 5px 0 $color-azul;
-            }
+            padding: 8px 10px;
+            margin-top: 5px;
+            border-bottom: 2px solid $color-gris; 
             a {
-                color: $color-blanco;
-                font-weight: 600;
+                padding: 5px 20px;
                 text-decoration: none;
-                border-bottom:3px solid $color-celeste;
-                padding: 5px 15px;
-                border-radius: 5px;
-
-                transition-duration: .35s;
-
+                color: $color-blanco;
+                text-transform: uppercase;
+                font-weight: 600;
             }
         }
+    }
+        
+}
 
+@media (min-width:1024px) {
+    .navegacion {
+        @include flexbox (space-between, center, row);
+        .nav__logo {
+            width: 150px;     
+        }
+        .nav__enlaces {
+            display: flex;
+            margin-top: 15px;
+            font-size: 16px;
+            li {
+                width: max-content;
+                padding: 0px 10px;
+                margin-top: 0px;
+                border: none;
+                a {
+                    border-bottom: 3px solid $color-azul;
+                    text-transform: capitalize;
+                }
+            }
+        }
     }
 
+
 }
+    
+
+
