@@ -5,14 +5,27 @@
     color: $color-gris;
     margin-top: 30px
 }
- 
 .productos {
-    @include boxmodel (15px, 10px auto, 2px solid $color-celeste, 0px);
+    @include boxmodel (20px, 10px , 2px solid $color-celeste, 10px);
     background-color: $color-gris;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .productos-img {
+        height: 50%;
+        img {
+            border: 2px solid $color-blanco;
+            height: 100%;
+            width: 100%;
+            
+        }
+    }    
     .productos-text {
         padding: 10px;
         color: $color-blanco;
         h4 {
+            margin-top: 15px;
             text-align: center;
             font-size: 22px;
             font-weight: 600;
@@ -29,7 +42,8 @@
             }
         }
         .productos-btn {
-            @include boxmodel (6px 20px, auto,0, 2px);
+            width: max-content;
+            @include boxmodel (6px 20px, auto,0, 4px);
             display: block;
             background-color: $color-celeste;
             color: $color-blanco;
@@ -46,4 +60,37 @@
     }
 
 
+}
+/*-------------------------------------------*/
+            /*indumentaria*/
+
+.indumentaria {
+    width: 65%; 
+    height: 125px;
+    margin: 20px auto;
+    animation-name: indumentaria;
+    animation-duration: 25s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    position: relative;
+    display: none;
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    @keyframes indumentaria {
+        0% {left: 0;}
+        25% {left:20%; }
+        50% {left:0%; }
+        75% {left:-20%; }
+        100% {left: -0%; } 
+    }
+}            
+
+@media (min-width:1024px) {
+    .indumentaria {
+        display: block;
+    }
+    
 }
