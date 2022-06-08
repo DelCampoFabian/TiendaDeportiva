@@ -10,7 +10,7 @@
 }
 
 body {
-  background-color: #0077CC;
+  background-color: #FFFFFF;
 }
 
 /*Flexbox*/
@@ -44,7 +44,7 @@ body {
 .navegacion .nav__enlaces {
   list-style: none;
   text-align: center;
-  font-size: 18px;
+  font-size: 15px;
 }
 
 .navegacion .nav__enlaces li {
@@ -68,7 +68,7 @@ body {
 @media (min-width: 768px) {
   .header-img {
     display: block;
-    margin-top: 30px;
+    margin-top: 0px;
   }
 }
 
@@ -135,37 +135,40 @@ body {
 .productos {
   padding: 20px;
   margin: 10px;
-  border: 2px solid #0095FF;
-  border-radius: 10px;
-  background-color: #161617;
+  border: 0;
+  border-radius: 0px;
+  background-color: #FFFFFF;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-shadow: 0px 0px 10px 0 #39393B;
+          box-shadow: 0px 0px 10px 0 #39393B;
 }
 
 .productos .productos-img {
+  width: 100%;
   height: 50%;
 }
 
 .productos .productos-img img {
-  border: 2px solid #FFFFFF;
+  border: 2px solid #161617;
   height: 100%;
   width: 100%;
 }
 
 .productos .productos-text {
   padding: 10px;
-  color: #FFFFFF;
+  color: #161617;
 }
 
 .productos .productos-text h4 {
@@ -176,7 +179,7 @@ body {
 }
 
 .productos .productos-text span {
-  font-size: 18px;
+  font-size: 15px;
 }
 
 .productos .productos-text p {
@@ -185,8 +188,8 @@ body {
 }
 
 .productos .productos-text p span {
+  font-size: 18px;
   color: #0095FF;
-  font-weight: 600;
 }
 
 .productos .productos-text .productos-btn {
@@ -195,13 +198,12 @@ body {
   width: max-content;
   padding: 6px 20px;
   margin: auto;
-  border: 0;
-  border-radius: 4px;
+  border: 2px solid #0095FF;
+  border-radius: 2px;
   display: block;
   background-color: #0095FF;
   color: #FFFFFF;
-  font-size: 18px;
-  outline: none;
+  font-size: 16px;
   -webkit-transition-duration: .3s;
           transition-duration: .3s;
 }
@@ -214,9 +216,11 @@ body {
 /*-------------------------------------------*/
 /*indumentaria*/
 .indumentaria {
-  width: 65%;
-  height: 125px;
-  margin: 20px auto;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: 100px;
+  margin: 20px;
   -webkit-animation-name: indumentaria;
           animation-name: indumentaria;
   -webkit-animation-duration: 25s;
@@ -230,10 +234,10 @@ body {
 }
 
 .indumentaria img {
-  height: 100%;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 @-webkit-keyframes indumentaria {
@@ -241,16 +245,16 @@ body {
     left: 0;
   }
   25% {
-    left: 20%;
+    left: 25%;
   }
   50% {
-    left: 0%;
+    left: 50%;
   }
   75% {
-    left: -20%;
+    left: 25%;
   }
   100% {
-    left: -0%;
+    left: 0%;
   }
 }
 
@@ -259,16 +263,71 @@ body {
     left: 0;
   }
   25% {
-    left: 20%;
+    left: 25%;
   }
   50% {
-    left: 0%;
+    left: 50%;
   }
   75% {
-    left: -20%;
+    left: 25%;
   }
   100% {
-    left: -0%;
+    left: 0%;
+  }
+}
+
+/*----------------------------*/
+/*-----ATAJOS-----*/
+.atajos {
+  background-color: #39393B;
+  padding-top: 150px;
+  display: none;
+}
+
+.atajos .atajos-categorias, .atajos .atajos-envio, .atajos .atajos-precio {
+  padding: 15px 30px;
+}
+
+.atajos .atajos-categorias h3, .atajos .atajos-envio h3, .atajos .atajos-precio h3 {
+  font-size: 22px;
+  color: #0095FF;
+}
+
+.atajos .atajos-categorias ul, .atajos .atajos-envio ul, .atajos .atajos-precio ul {
+  list-style: none;
+}
+
+.atajos .atajos-categorias ul li, .atajos .atajos-envio ul li, .atajos .atajos-precio ul li {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  font-size: 18px;
+  padding: 5px 0;
+}
+
+.atajos .atajos-categorias ul li a, .atajos .atajos-envio ul li a, .atajos .atajos-precio ul li a {
+  text-decoration: none;
+  color: #FFFFFF;
+  border-bottom: 2px solid #0077CC;
+}
+
+@media (min-width: 768px) {
+  .main-titulo {
+    margin: 50px auto;
+    background-color: #161617;
+  }
+  .main-titulo h1 {
+    width: 20%;
+    height: 80px;
+    margin: auto;
+    border: 5px solid #161617;
+  }
+  .main-titulo h1 img {
+    width: 100%;
+    height: 100%;
+  }
+  .atajos {
+    display: block;
   }
 }
 
@@ -276,8 +335,34 @@ body {
   .indumentaria {
     display: block;
   }
+  .productos {
+    height: 450px;
+  }
+  .productos .productos-text {
+    padding: 10px;
+    color: #161617;
+  }
+  .productos .productos-text h4 {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+  }
+  .productos .productos-text span {
+    font-size: 15px;
+  }
+  .productos .productos-text p {
+    font-size: 18px;
+    margin-top: 5px;
+  }
+  .productos .productos-text p span {
+    font-size: 18px;
+    color: #0095FF;
+  }
 }
 
+/*---------------------------*/
+/*accesorios*/
 .aside {
   background-color: #161617;
   margin-top: 50px;
@@ -311,7 +396,7 @@ body {
 
 .pie {
   margin-top: 100px;
-  background-color: #39393B;
+  background-color: #0077CC;
 }
 
 .pie .pie-contacto, .pie .pie-pago, .pie .pie-redes {
@@ -319,7 +404,7 @@ body {
 }
 
 .pie .pie-contacto h5, .pie .pie-pago h5, .pie .pie-redes h5 {
-  color: #0095FF;
+  color: #161617;
   font-size: 28px;
 }
 

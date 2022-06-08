@@ -30,13 +30,13 @@
 }
 .header-img {
     display: none;
+    
  }
 
  @media (min-width:768px) {
     .header-img {
         display: block;
-        margin-top: 30px;
-        
+        margin-top: 0px; 
      }
  }
 

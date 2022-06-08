@@ -6,16 +6,16 @@
     margin-top: 30px
 }
 .productos {
-    @include boxmodel (20px, 10px , 2px solid $color-celeste, 10px);
-    background-color: $color-gris;
+    @include boxmodel (20px, 10px , 0, 0px);
+    background-color: $color-blanco;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    @include flexbox (center,center,column);
+    box-shadow: 0px 0px 10px 0 $color-grisClaro;
     .productos-img {
+        width: 100%;
         height: 50%;
         img {
-            border: 2px solid $color-blanco;
+            border: 2px solid $color-gris;
             height: 100%;
             width: 100%;
             
@@ -23,7 +23,7 @@
     }    
     .productos-text {
         padding: 10px;
-        color: $color-blanco;
+        color: $color-gris;
         h4 {
             margin-top: 15px;
             text-align: center;
@@ -34,26 +34,24 @@
             font-size: $parrafos-mobile;
         }
         p {
-            font-size: $parrafos-mobile;
+            font-size: $parrafos-desktop;
             margin-top: 5px ;
             span {
+                font-size: $parrafos-desktop;
                 color: $color-celeste;
-                font-weight: 600;
             }
         }
         .productos-btn {
             width: max-content;
-            @include boxmodel (6px 20px, auto,0, 4px);
+            @include boxmodel (6px 20px, auto, 2px solid $color-celeste, 2px);
             display: block;
             background-color: $color-celeste;
             color: $color-blanco;
-            font-size: 18px;
-            outline: none;
+            font-size: 16px;
             transition-duration: .3s;
             &:hover {
                 background-color: $color-blanco;
-                color: $color-celeste;
-                
+                color: $color-celeste;  
             }
         }
         
@@ -65,9 +63,9 @@
             /*indumentaria*/
 
 .indumentaria {
-    width: 65%; 
-    height: 125px;
-    margin: 20px auto;
+    width: max-content;
+    height: 100px;
+    margin: 20px;
     animation-name: indumentaria;
     animation-duration: 25s;
     animation-timing-function: linear;
@@ -75,22 +73,117 @@
     position: relative;
     display: none;
     img {
-        height: 100%;
         width: 100%;
-        object-fit: cover;
+        height: 100%;
+        object-fit: contain;
     }
+    
     @keyframes indumentaria {
         0% {left: 0;}
-        25% {left:20%; }
-        50% {left:0%; }
-        75% {left:-20%; }
-        100% {left: -0%; } 
+        25% {left:25%; }
+        50% {left:50%; }
+        75% {left:25%; }
+        100% {left:0%; } 
     }
-}            
+}        
+
+/*----------------------------*/
+/*-----ATAJOS-----*/
+.atajos {
+    background-color: $color-grisClaro;
+    padding-top: 150px;
+    display: none;
+    .atajos-categorias,.atajos-envio, .atajos-precio {
+        padding: 15px 30px;
+        h3{
+            font-size: 22px;
+            color: $color-celeste;
+        }
+        ul {
+            list-style: none;
+            li {
+                width: max-content;
+                font-size: 18px;
+                padding: 5px 0;
+                a {
+                    text-decoration: none;
+                    color: $color-blanco;
+                    border-bottom: 2px solid $color-azul;
+
+                }
+            }
+        }
+    }
+
+}
+
+
+@media (min-width:768px) {
+    .main-titulo {
+        margin: 50px auto;
+        background-color: $color-gris;
+        h1{ 
+            width:20%;
+            height: 80px;
+            margin: auto;
+            border: 5px solid $color-gris;
+            img {
+                width: 100%;
+                height: 100%;  
+            }
+        }
+        
+    }
+    .atajos {
+        display: block;
+    }
+}
+
 
 @media (min-width:1024px) {
     .indumentaria {
         display: block;
     }
+    .productos {
+        height: 450px;
+        .productos-text {
+            padding: 10px;
+            color: $color-gris;
+            h4 {
+                margin-top: 15px;
+                text-align: center;
+                font-size: 22px;
+                font-weight: 600;
+            }
+            span {
+                font-size: $parrafos-mobile;
+            }
+            p {
+                font-size: $parrafos-desktop;
+                margin-top: 5px ;
+                span {
+                    font-size: $parrafos-desktop;
+                    color: $color-celeste;
+                }
+            }
+            
+        }
+    
+    
+    }
+
     
 }
+
+
+/*---------------------------*/
+/*accesorios*/
+
+
+
+
+
+        
+
+    
+
