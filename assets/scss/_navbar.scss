@@ -28,6 +28,32 @@
     }
         
 }
+/*NAVBAR REGISTRO*/
+.nav-registro {
+    a {
+        display: inline-block;
+        margin: 15px;
+        text-decoration: none;
+        text-transform: uppercase;
+        color:  $color-blanco;
+        font-size: $parrafos-mobile;
+        border-radius: 4px;
+        font-weight: 600;
+        border-bottom: 2px solid $color-azul;
+        padding: 5px 15px;
+        transition-duration: .2s;
+        &:hover {
+            transform: translateY(2px);
+            background-color: $color-azul;
+            box-shadow: .5px -0.5px 5px 0 $color-blanco;
+        }
+    }
+    
+    
+} 
+
+
+/*HEADER*/
 .header-img {
     display: none;
     

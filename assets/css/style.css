@@ -61,6 +61,31 @@ body {
   font-weight: 600;
 }
 
+/*NAVBAR REGISTRO*/
+.nav-registro a {
+  display: inline-block;
+  margin: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  font-size: 15px;
+  border-radius: 4px;
+  font-weight: 600;
+  border-bottom: 2px solid #0077CC;
+  padding: 5px 15px;
+  -webkit-transition-duration: .2s;
+          transition-duration: .2s;
+}
+
+.nav-registro a:hover {
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
+  background-color: #0077CC;
+  -webkit-box-shadow: 0.5px -0.5px 5px 0 #FFFFFF;
+          box-shadow: 0.5px -0.5px 5px 0 #FFFFFF;
+}
+
+/*HEADER*/
 .header-img {
   display: none;
 }
@@ -169,11 +194,11 @@ body {
 .productos .productos-text {
   padding: 10px;
   color: #161617;
+  text-align: center;
 }
 
 .productos .productos-text h4 {
   margin-top: 15px;
-  text-align: center;
   font-size: 22px;
   font-weight: 600;
 }
@@ -311,6 +336,72 @@ body {
   border-bottom: 2px solid #0077CC;
 }
 
+/*REGISTRO E INICIO DE SESION*/
+.registro {
+  padding: 20px 15px;
+  margin: 30px 10px 0;
+  border: 2px solid #0095FF;
+  border-radius: 2px;
+  -webkit-box-shadow: 0.5px -0.5px 10px 0 #0095FF;
+          box-shadow: 0.5px -0.5px 10px 0 #0095FF;
+  background-color: #161617;
+}
+
+.registro .registro-titulo {
+  text-align: center;
+}
+
+.registro .registro-titulo h2 {
+  font-size: 28px;
+  color: #FFFFFF;
+}
+
+.registro .registro-form {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.registro .registro-form .form-label, .registro .registro-form .form-input {
+  font-size: 17px;
+  padding: 5px 10px;
+  margin-top: 5px;
+}
+
+.registro .registro-form .form-input {
+  width: 100%;
+  outline: none;
+  border: none;
+  border-bottom: 4px solid #0095FF;
+}
+
+.registro .registro-form .form-label {
+  color: #0095FF;
+  font-weight: 600;
+}
+
+.registro .registro-form span {
+  padding: 10px;
+  display: block;
+  color: #FFFFFF;
+  font-size: 15px;
+}
+
+.registro .registro-form button {
+  margin-top: 5px;
+  padding: 5px 30px;
+  background-color: #0095FF;
+  color: #FFFFFF;
+  border-radius: 2px;
+  border: none;
+  border-bottom: 4px solid #FFFFFF;
+}
+
+.registro .registro-form button:hover {
+  background-color: #0077CC;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
 @media (min-width: 768px) {
   .main-titulo {
     margin: 50px auto;
@@ -400,7 +491,7 @@ body {
 }
 
 .pie .pie-contacto, .pie .pie-pago, .pie .pie-redes {
-  padding: 10px 25px;
+  padding: 10px 25px 0px;
 }
 
 .pie .pie-contacto h5, .pie .pie-pago h5, .pie .pie-redes h5 {
@@ -424,5 +515,6 @@ body {
   text-align: center;
   background-color: #aaa;
   padding: 10px 0;
+  margin: 0;
 }
 /*# sourceMappingURL=style.css.map */

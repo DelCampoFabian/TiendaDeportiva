@@ -16,23 +16,75 @@
     <link rel="stylesheet" href="../assets/css/style.css"> 
 </head>
 <body>
-    <header class="row justify-content-center">
-        <nav class="navegacion">
-            <div class="nav__logo">
+
+  <!--ENCABEZADO-->
+
+    <header >
+        <nav class="row justify-content-around navegacion">
+            <div class="nav__logo col-lg-6 text-center">
                 <img class="img-fluid" src="../assets/img/logonav.jpg" alt="">
             </div>
-            <ul class="nav__enlaces p-0">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="accesorios.html">Accesorios</a></li>
-                <li><a href="indumentaria.html">Indumentaria</a></li>
-                <li><a href="suplementos.html">Suplementos</a></li>
-                <li><a href="snacks.html">Snacks y Barritas</a></li>
-                <li><a href="compras.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
-                <li><a href="registro.html">Iniciar Sesión</a></li>
-            </ul>
+            <div class="nav-registro col-lg-6 text-center">
+              <a href="../index.html">Volver</a>
+            </div>
         </nav>
-        <img class="header-img p-0" src="../assets/img/header.jpg" alt="Descuentos">
     </header>
+
+    <!--INICIO DE SESION-->
+
+
+    <main class="row justify-content-center">
+      <section class="col-11 col-md-6 col-lg-4 registro">
+        <div class="col-12 registro-titulo">
+          <h2>Iniciar Sesión</h2>
+        </div>
+        <div class="col-12 registro-form__container">
+          <form class="registro-form">
+            <label class="form-label" for="usuario">Nombre de usuario o Email</label>
+            <input class="form-input" type="text" placeholder="Nombre usuario o Email" name="usuario">
+            <label class="form-label" for="contraseña">Introduzca su contraseña</label>
+            <input class="form-input" type="password" placeholder="Password" name="contraseña">
+            <span>¿No tienes una cuenta? <a href="#">Registrate</a></span>
+            <span>¿Haz olvidado tu contraseña? <a href="#">Haz click aquí</a></span>
+            <button>Iniciar sesión</button>
+          </form>
+        </div>
+      </section>     
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--PIE DE PAGINA-->
+
     <footer class="pie row justify-content-center">
         <div class="col-md-6 col-lg-4 pie-contacto">
           <h5>Contacto</h5>
